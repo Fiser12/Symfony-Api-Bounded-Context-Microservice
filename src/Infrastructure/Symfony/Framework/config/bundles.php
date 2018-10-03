@@ -16,6 +16,5 @@ return [
     LIN3S\Distribution\Php\Symfony\Lin3sDistributionBundle::class                                    => ['all' => true],
     Symfony\Bundle\FrameworkBundle\FrameworkBundle::class                                            => ['all' => true],
     Symfony\Bundle\MonologBundle\MonologBundle::class                                                => ['all' => true],
-    Symfony\Bundle\SecurityBundle\SecurityBundle::class                                              => ['all' => true],
     Symfony\Bundle\WebServerBundle\WebServerBundle::class                                            => ['dev' => true],
 ];
