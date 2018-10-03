@@ -4,6 +4,7 @@
         "ext-ctype": "*",
         "ext-iconv": "*",
         "guzzlehttp/guzzle": "^6.3",
+        "incenteev/composer-parameter-handler": "^2.1",
         "lin3s/cs": "^0.7.4",
         "lin3s/distribution": "^4.2",
         "lin3s/shared-kernel": "^0.6.0",
@@ -31,6 +32,7 @@
     },
     "scripts": {
         "symfony-scripts": [
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
@@ -41,6 +43,7 @@
         ],
         "lin3scs-scripts": [
             "LIN3S\\CS\\Composer\\Hooks::buildDistFile",
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
             "LIN3S\\CS\\Composer\\Hooks::addHooks",
             "LIN3S\\CS\\Composer\\Hooks::addFiles"
         ],
