@@ -23,6 +23,6 @@ framework:
         log: true
 
 parameters:
-    secret: '%env(APP_SECRET)%'
+    secret: '%env(APP_ENV)%'
     locales: en|es
     locale: es

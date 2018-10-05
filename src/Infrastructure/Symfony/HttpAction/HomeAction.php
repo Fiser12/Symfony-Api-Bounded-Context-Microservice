@@ -15,8 +15,15 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 
 class HomeAction
 {
+    private $parameter;
+
+    public function __construct(string $parameter)
+    {
+        $this->parameter = $parameter;
+    }
+
     public function __invoke() : JsonResponse
     {
-        return new JsonResponse(['message' => 'Hello world!']);
+        return new JsonResponse(['message' => 'Hello world! ' . $this->parameter]);
     }
 }
