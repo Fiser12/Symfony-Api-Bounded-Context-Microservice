@@ -6,5 +6,5 @@
 # file that was distributed with this source code.
 
 app_home:
-    path: /app/
+    path: /
     controller: App\Infrastructure\Symfony\HttpAction\HomeAction::__invoke
